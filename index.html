@@ -227,6 +227,71 @@
       box-shadow: 0 0 6px #2d6a3f88;
       flex-shrink: 0;
     }
+
+    /* ── Mobile ── */
+    @media (max-width: 600px) {
+      html, body {
+        height: 100dvh;
+      }
+
+      body {
+        height: 100dvh;
+      }
+
+      .card {
+        width: calc(100vw - 2rem);
+        height: calc(100dvh - 2rem);
+        padding: 1.75rem 1.75rem;
+      }
+
+      .badge::before {
+        display: none;
+      }
+
+      .name {
+        font-size: clamp(2.25rem, 11vw, 3rem);
+      }
+
+      .rule {
+        margin: 1.1rem 0;
+      }
+
+      .specialties {
+        flex-direction: column;
+        gap: 0.55rem;
+        margin-top: 0.2rem;
+      }
+
+      .spec {
+        font-size: 0.68rem;
+        color: #4a4a4e;
+      }
+
+      .spec + .spec::before {
+        display: none;
+      }
+
+      .bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.25rem;
+      }
+
+      .contacts {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem 1.5rem;
+        width: 100%;
+      }
+
+      .contact-value {
+        font-size: 0.72rem;
+      }
+
+      .status {
+        color: #333;
+      }
+    }
   </style>
 </head>
 <body>
