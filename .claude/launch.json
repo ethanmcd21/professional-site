@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "professional-site",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["/Users/ethan/Documents/Website Development/professional-site/serve.py"],
+      "port": 3000
+    }
+  ]
+}
